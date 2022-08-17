@@ -27,7 +27,7 @@ class Helloworld_v1(Resource):
                 description: wrong type of data
         """
         parser = reqparse.RequestParser()
-        parser.add_argument('value')
+        parser.add_argument('value', location = 'args', type=str)
 
 
         args = parser.parse_args()
