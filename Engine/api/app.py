@@ -17,8 +17,8 @@ def create_app(config_name):
     template = {
         "swagger": "2.0",
         "info": {
-            "title" : "Reliable News Detection",
-            "description": "Extracting stylometric features from news articles and predicting reliability of the article",
+            "title" : "Flask Tutorial",
+            "description": "Swagger tutorial",
             "version": "1.0.0"
 
         },
@@ -29,7 +29,7 @@ def create_app(config_name):
     app = Flask(__name__)
 
     app.config['SWAGGER'] = {
-        'title': 'Reliable news Detection engine',
+        'title': 'Flask Tutorial',
         'uiversion': 3, # Related to swagger
         'specs_route':"/swagger/"
     }
